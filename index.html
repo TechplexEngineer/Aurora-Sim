@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Aurora-sim by TechplexEngineer</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/TechplexEngineer/Aurora-Sim">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/TechplexEngineer/Aurora-Sim/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/TechplexEngineer/Aurora-Sim/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Aurora-sim</h1>
+          <p>An Open Source Virtual World Server</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/TechplexEngineer">TechplexEngineer</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="aurora" class="anchor" href="#aurora"><span class="octicon octicon-link"></span></a>AURORA</h1>
+
+<p>The Aurora Development Team is proud to present the release of Aurora virtual world server.
+ The Aurora server is an OpenSim derived project with heavy emphasis on supporting all users, 
+ increased technology focus, heavy emphasis on working with other developers,
+ whether it be viewer based developers or server based developers, 
+ and a set of features around stability and simplified usability for users.</p>
+
+<p>We aren’t just releasing new features, but a new outlook on a virtual world development for the average human.
+ We encourage you to read our manifesto (<a href="http://aurora-sim.org/index.php?option=com_content&amp;view=article&amp;id=20&amp;Itemid=60">http://aurora-sim.org/index.php?option=com_content&amp;view=article&amp;id=20&amp;Itemid=60</a>)
+ and learn about our direction to make the people’s choice in virtual server!</p>
+
+<h2>
+<a name="compiling-aurora" class="anchor" href="#compiling-aurora"><span class="octicon octicon-link"></span></a>Compiling Aurora</h2>
+
+<p><em>To compile Aurora, look at BUILDING.txt for more information.</em></p>
+
+<h2>
+<a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration</h2>
+
+<p><em>Configuration in Aurora is a bit different than in other distributions of OpenSim.</em>
+In Aurora, all configuration files (except for AuroraServer.ini and Aurora.ini) have been moved to the AuroraServerConfiguration and Configuration folders (respectively) and further subdivided from there into categories of .ini files.</p>
+
+<h3>
+<a name="config-file-rundown" class="anchor" href="#config-file-rundown"><span class="octicon octicon-link"></span></a>Config file rundown</h3>
+
+<p><em>Note - All file paths are from the Configuration directory</em></p>
+
+<h4>
+<a name="configuration-folder" class="anchor" href="#configuration-folder"><span class="octicon octicon-link"></span></a>Configuration folder</h4>
+
+<ul>
+<li>  Main.ini -  Contains the settings to switch between standalone, grid mode, and Simian.</li>
+</ul><h4>
+<a name="data-folder" class="anchor" href="#data-folder"><span class="octicon octicon-link"></span></a>Data folder</h4>
+
+<ul>
+<li>  Data.ini -  Settings to switch between database modules</li>
+<li>  MySQL.ini -  Settings for the MySQL Database.</li>
+<li>  SQLite.ini -  Settings for the SQLite Database.</li>
+</ul><h4>
+<a name="grid-folder" class="anchor" href="#grid-folder"><span class="octicon octicon-link"></span></a>Grid folder</h4>
+
+<ul>
+<li>  AuroraGridCommon.ini -  Contains files that are used in grid mode.</li>
+</ul><h4>
+<a name="modules-folder" class="anchor" href="#modules-folder"><span class="octicon octicon-link"></span></a>Modules folder</h4>
+
+<ul>
+<li>  Advanced.ini -  Contains settings including the prioritizer, LLUDP server settings, and packet pool.</li>
+<li>  AssetCache.ini - Contains the asset cache settings.</li>
+<li>  AuroraModules.ini -  Contains all the settings for the Aurora Modules, including the Aurora Profile and Search plugins, Map Module, World Terrain settings, Chat, Messaging, Display Names, and more.</li>
+<li>  Concierge.ini -  Contains the concierge chat plugin settings.</li>
+<li>  Economy.ini -  Contains settings that have to do with the economy module in Aurora.</li>
+<li>  Groups.ini -  Contains all group module configuration.</li>
+<li>  InstanceSettings.ini -  Contains settings that have to deal with the OpenRegionSettings module.</li>
+<li>  IRC.ini -  Contains settings that deal with the IRC chat module connector.</li>
+<li>  Nature.ini -  Contains cloud, wind, sun, and tree settings.</li>
+<li>  Permissions.ini -  This sets up the permission modules and who can create scripts.</li>
+<li>  Protection.ini -  This deals with banning, restarting Aurora automatically, auto OAR backup, and more.</li>
+<li>  RemoteAdmin.ini -  This contains all the Remote Admin settings.</li>
+<li>  Search.ini -  This configures the DataSnapshot module which is used for alternative search plugins.</li>
+<li>  SMTPEmail.ini -  This sets up the Email module.</li>
+<li>  Startup.ini -  This contains settings including Default object name, checking for updates, error reporting, MegaRegions, Persistence, and Animations.</li>
+<li>  Stats.ini -  Sets up the optional stats module.</li>
+<li>  VoiceModules.ini -  Contains the voice modules configurations.</li>
+</ul><h4>
+<a name="physics-folder" class="anchor" href="#physics-folder"><span class="octicon octicon-link"></span></a>Physics folder</h4>
+
+<ul>
+<li>  Physics.ini -  Contains settings to enable/disable physics plugins.</li>
+<li>  Meshing.ini -  Contains meshing settings.</li>
+</ul><h4>
+<a name="scripting-folder" class="anchor" href="#scripting-folder"><span class="octicon octicon-link"></span></a>Scripting folder</h4>
+
+<ul>
+<li>  Scripting.ini -  Contains settings to enable/disable scripting plugins.</li>
+<li>  MRM.ini -  Contains MRM settings.</li>
+<li>  AuroraDotNetEngine.ini -  Contains ADNE (the script engine) settings.</li>
+</ul><h4>
+<a name="simian-folder" class="anchor" href="#simian-folder"><span class="octicon octicon-link"></span></a>Simian folder</h4>
+
+<ul>
+<li>  Simian.ini -  Contains files that are used in Simian grid mode.</li>
+</ul><h4>
+<a name="standalone-folder" class="anchor" href="#standalone-folder"><span class="octicon octicon-link"></span></a>Standalone folder</h4>
+
+<ul>
+<li>  StandaloneCommon.ini -  Contains files that are used in Standalone mode.</li>
+</ul><h3>
+<a name="standalone-configuration" class="anchor" href="#standalone-configuration"><span class="octicon octicon-link"></span></a>Standalone Configuration</h3>
+
+<p>To run Aurora, you will need to edit a config file for it to run. This file is:</p>
+
+<p>bin/Aurora.ini</p>
+
+<ul>
+<li>  You will need to modify the [Network] section, specifically the HostName parameter.</li>
+<li>  By default, the line is "HostName = <a href="http://127.0.0.1">http://127.0.0.1</a>" and if you want to allow other users besides yourself to connect to your instance, you will need to change this to your external IP, which can be found  at <a href="http://www.whatsmyip.org/">http://www.whatsmyip.org/</a>.</li>
+</ul><h2>
+<a name="starting-aurora" class="anchor" href="#starting-aurora"><span class="octicon octicon-link"></span></a>Starting Aurora</h2>
+
+<p>To Start the simulator part of Aurora, just double click on Aurora.exe (if you are running a 64 bit machine and operating system, click on Aurora.32bitLauncher.exe). It will run for a bit until you come to a screen that will help you interactively configure your new region.</p>
+
+<h2>
+<a name="connecting-to-aurora" class="anchor" href="#connecting-to-aurora"><span class="octicon octicon-link"></span></a>Connecting to Aurora</h2>
+
+<p>To connect to the simulator with Imprudence, you must add a new grid to the Grid Manager.
+1.  Click on the Grid Manager button, and in the new popup, click "Add".
+2.  In the loginURI space, put "http://:9000/" where "" is your IP.
+3.  If you arn't sure what your IP is, you can check at <a href="http://www.whatsmyip.org/">http://www.whatsmyip.org/</a>. 
+4.  After this, set a name for your grid in the Grid Name area.
+5.  Then press apply and close the box. Select the grid you just created and then login with your username and password and enjoy!</p>
+
+<h2>
+<a name="router-issues" class="anchor" href="#router-issues"><span class="octicon octicon-link"></span></a>Router issues</h2>
+
+<p>If you are having issues logging into your simulator, take a look at <a href="http://forums.osgrid.org/viewtopic.php?f=14&amp;t=2082">http://forums.osgrid.org/viewtopic.php?f=14&amp;t=2082</a> in the Router Configuration section for more information on ways to resolve this issue.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
